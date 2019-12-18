@@ -10,5 +10,5 @@ from sklearn.ensemble import ExtraTreesClassifier
 
 data = pd.read_csv('android_bids_us.csv')
 df = pd.DataFrame(data)
-df.groupby('device_height').agg({'click': ['var']})
+df.groupby('device_height').agg({'click': ['mean']})
 
